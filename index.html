@@ -16,12 +16,147 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
     <header>
       <!-- place navbar here -->
+      <nav class="container-fluid px_35">
+        <a class="logo" href="">
+          <img src="img/LOGO1.svg" alt="LOGO" />
+        </a>
+        <ul class="nav_left">
+          <li>
+            <a class="nav_red" href="about.html">關於我們</a>
+            <div class="nav_menu">
+              <ol>
+                <li><a href="about.html">公司簡介</a></li>
+                <li><a href="about2.html">集團大事紀</a></li>
+                <li><a href="about3.html">品牌故事</a></li>
+              </ol>
+            </div>
+          </li>
+          <li>
+            <a href="news.html">最新消息</a>
+            <div class="nav_menu">
+              <div class="nav_menu_area">
+                <ol>
+                  <li><a href="news.html">活動快訊</a></li>
+                  <li><a href="news.html">產品消息</a></li>
+                  <li><a href="news.html">音樂教育</a></li>
+                </ol>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="product.html">產品介紹</a>
+            <div class="nav_menu">
+              <div class="nav_menu_area">
+                <ol>
+                  <li><a href="product2.html">管樂器</a></li>
+                  <li><a href="product2.html">弦樂器</a></li>
+                  <li><a href="product2.html">口琴/手風琴</a></li>
+                  <li><a href="product2.html">鍵盤樂器</a></li>
+                  <li><a href="product2.html">熱門樂器</a></li>
+                  <li><a href="product2.html">打擊樂器</a></li>
+                  <li><a href="product2.html">零配件</a></li>
+                  <li><a href="product2.html">其他</a></li>
+                </ol>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="music.html">音樂教育</a>
+            <div class="nav_menu">
+              <div class="nav_menu_area">
+                <ol>
+                  <li><a href="music2.html">兒童課程</a></li>
+                  <li><a href="music3.html">成人課程</a></li>
+                  <li><a href="music4.html">嚴選師資</a></li>
+                  <li><a href="store.html">教室查詢</a></li>
+                  <li><a href="music5.html">課程諮詢</a></li>
+                </ol>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="store.html">門市據點</a>
+            <div class="nav_menu">
+              <div class="nav_menu_area">
+                <ol>
+                  <li><a href="store.html">門市/教室介紹</a></li>
+                </ol>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="service.html">服務中心</a>
+            <div class="nav_menu">
+              <div class="nav_menu_area">
+                <ol>
+                  <li><a href="service.html">聯絡我們</a></li>
+                  <li><a href="service2.html">管樂器維修</a></li>
+                  <li><a href="service4.html">樂器保養知識</a></li>
+                  <li><a href="service5.html">好站連結</a></li>
+                </ol>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav_right">
+          <li>
+            <a class="public_icon h_facebook" title="facebook" href="#"
+              >facebook</a
+            >
+          </li>
+          <li>
+            <a class="public_icon h_youtube" title="youtube" href="#"
+              >youtube</a
+            >
+          </li>
+          <li><a class="public_icon h_line" title="line" href="#">line</a></li>
+        </ul>
+        <div>
+          <a class="public_icon nav_search" title="search" href="#">搜尋</a>
+        </div>
+      </nav>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/bg/bg-32.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/bg/bg-33.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/bg/bg-34.png" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="bottom_area">
+        <h1>
+          全心灌溉熱愛音樂的幼苗
+          <button id="youtube_button" class="youtube_play"></button>
+        </h1>
+        <p>
+          功學社取自「貢獻」、「學校」、「社會」，我們希望用優質的樂器與熱誠的音樂教育，將藝術的種子散布在台灣各處，同時走向國際名揚台灣精神。
+        </p>
+        <a>關於我們</a>
+      </div>
+      <a id="go_down" class="go_down" href="#">down</a>
     </header>
     <main></main>
     <footer>
@@ -39,5 +174,21 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
