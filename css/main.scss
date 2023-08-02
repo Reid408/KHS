@@ -1,6 +1,6 @@
-@import "variable";
-@import "header";
 @import "global";
+@import "variable";
 
-body {
-}
+@import "header";
+@import "service";
+@import "news";

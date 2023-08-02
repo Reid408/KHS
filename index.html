@@ -32,7 +32,11 @@
         <a class="logo" href="">
           <img src="img/LOGO1.svg" alt="LOGO" />
         </a>
-        <ul class="nav_left">
+
+        <ul
+          id="navbarCollapse"
+          class="nav_left collapse navbar-collapse d-xl-flex d-xxl-flex"
+        >
           <li>
             <a class="nav_red" href="about.html">關於我們</a>
             <div class="nav_menu">
@@ -123,11 +127,26 @@
           </li>
           <li><a class="public_icon h_line" title="line" href="#">line</a></li>
         </ul>
+        <div
+          class="nav_mobile d-xl-none"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="menu">
+            <div class="line line0"></div>
+            <div class="line_parent">
+              <div class="line line1"></div>
+              <div class="line line2"></div>
+            </div>
+          </div>
+        </div>
         <div>
           <a class="public_icon nav_search" title="search" href="#">搜尋</a>
         </div>
       </nav>
-
       <!-- Swiper -->
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -160,7 +179,282 @@
       </div>
       <a id="go_down" class="go_down" href="#">down</a>
     </header>
-    <main></main>
+    <main>
+      <section class="service">
+        <div class="container">
+          <div></div>
+          <div class="row gy-3">
+            <div class="col-lg-6">
+              <div class="service_parent">
+                <a href="/product">
+                  <div class="service_img">
+                    <div
+                      class="inner"
+                      style="background-image: url(img/bg/bg-32.png)"
+                    ></div>
+                  </div>
+                </a>
+                <div class="service_text">
+                  <div class="service_bg"></div>
+                  <div class="service_inner">
+                    <h3><a href="/product">產品介紹</a></h3>
+                    <p>
+                      鋼琴、電子琴、各種管樂器、弦樂器、打擊樂器及數位樂器之銷售及維修服務。
+                    </p>
+                  </div>
+                  <div class="service_more">
+                    <a href="/product">了解更多<span class="arrow"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="service_parent">
+                <a href="/product">
+                  <div class="service_img">
+                    <div
+                      class="inner"
+                      style="background-image: url(img/bg/bg-33.png)"
+                    ></div>
+                  </div>
+                </a>
+                <div class="service_text">
+                  <div class="service_bg"></div>
+                  <div class="service_inner">
+                    <h3><a href="/product">產品介紹</a></h3>
+                    <p>
+                      鋼琴、電子琴、各種管樂器、弦樂器、打擊樂器及數位樂器之銷售及維修服務。
+                    </p>
+                  </div>
+                  <div class="service_more">
+                    <a href="/product">了解更多<span class="arrow"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="news_parent">
+                <a href="/getNews?id=366">
+                  <div class="news_img">
+                    <img
+                      src="https://picsum.photos/800/600?random=488"
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="news_area">
+                  <div class="area_button">
+                    <a href="/getNews?id=366">活動快訊</a>
+                  </div>
+                  <div class="news_time"><span>八月 3, 2022</span></div>
+                </div>
+                <div class="news_text">
+                  <h3 style="height: 53px; overflow: hidden">
+                    <a href="/getNews?id=366"
+                      >彩繪你的鋼琴彩繪你的鋼琴彩繪你的鋼琴！ 音樂夢</a
+                    >
+                  </h3>
+                  <p>無料！吹嘴體驗＆樂器健檢</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="news_parent">
+                <a href="/getNews?id=366">
+                  <div class="news_img">
+                    <img
+                      src="https://picsum.photos/800/600?random=388"
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="news_area">
+                  <div class="area_button">
+                    <a href="/getNews?id=366">活動快訊</a>
+                  </div>
+                  <div class="news_time"><span>八月 3, 2022</span></div>
+                </div>
+                <div class="news_text">
+                  <h3 style="height: 53px; overflow: hidden">
+                    <a href="/getNews?id=366"
+                      >彩繪你的鋼琴彩繪你的鋼琴彩繪你的鋼琴！ 音樂夢</a
+                    >
+                  </h3>
+                  <p>無料！吹嘴體驗＆樂器健檢</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="news_parent">
+                <a href="/getNews?id=366">
+                  <div class="news_img">
+                    <img src="https://picsum.photos/800/600?random=4" alt="" />
+                  </div>
+                </a>
+                <div class="news_area">
+                  <div class="area_button">
+                    <a href="/getNews?id=366">活動快訊</a>
+                  </div>
+                  <div class="news_time"><span>八月 3, 2022</span></div>
+                </div>
+                <div class="news_text">
+                  <h3 style="height: 53px; overflow: hidden">
+                    <a href="/getNews?id=366"
+                      >彩繪你的鋼琴彩繪你的鋼琴彩繪你的鋼琴！ 音樂夢</a
+                    >
+                  </h3>
+                  <p>無料！吹嘴體驗＆樂器健檢</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="news_parent">
+                <a href="/getNews?id=366">
+                  <div class="news_img">
+                    <img src="https://picsum.photos/800/600?random=45" alt="" />
+                  </div>
+                </a>
+                <div class="news_area">
+                  <div class="area_button">
+                    <a href="/getNews?id=366">活動快訊</a>
+                  </div>
+                  <div class="news_time"><span>八月 3, 2022</span></div>
+                </div>
+                <div class="news_text">
+                  <h3 style="height: 53px; overflow: hidden">
+                    <a href="/getNews?id=366"
+                      >彩繪你的鋼琴彩繪你的鋼琴彩繪你的鋼琴！ 音樂夢</a
+                    >
+                  </h3>
+                  <p>無料！吹嘴體驗＆樂器健檢</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-lg news_bottom">
+            <div class="row g-0">
+              <div class="col-lg-3">
+                <div class="news_bottom_img">
+                  <img src="https://picsum.photos/800/600?random=488" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-9 row custom-style g-0">
+                <div class="col-lg-2">
+                  <div class="three_area">
+                    <div class="area_button">
+                      <a href="/getNews?id=430">活動快訊</a>
+                    </div>
+                    <div class="three_time"><span>七月 27, 2023</span></div>
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <div class="three_text">
+                    <h3 style="height: 53px; overflow: hidden">
+                      <a href="/getNews?id=430"
+                        >⦅每天十分鐘的有效練習⦆　薩克斯風系列講座</a
+                      >
+                    </h3>
+
+                    <p>《薩克斯風很簡單》系列音樂講座</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row g-0">
+              <div class="col-lg-3">
+                <div class="news_bottom_img">
+                  <img src="https://picsum.photos/800/600?random=488" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-9 row custom-style g-0">
+                <div class="col-lg-2">
+                  <div class="three_area">
+                    <div class="area_button">
+                      <a href="/getNews?id=430">活動快訊</a>
+                    </div>
+                    <div class="three_time"><span>七月 27, 2023</span></div>
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <div class="three_text">
+                    <h3 style="height: 53px; overflow: hidden">
+                      <a href="/getNews?id=430"
+                        >⦅每天十分鐘的有效練習⦆　薩克斯風系列講座</a
+                      >
+                    </h3>
+
+                    <p>《薩克斯風很簡單》系列音樂講座</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row g-0">
+              <div class="col-lg-3">
+                <div class="news_bottom_img">
+                  <img src="https://picsum.photos/800/600?random=488" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-9 row custom-style g-0">
+                <div class="col-lg-2">
+                  <div class="three_area">
+                    <div class="area_button">
+                      <a href="/getNews?id=430">活動快訊</a>
+                    </div>
+                    <div class="three_time"><span>七月 27, 2023</span></div>
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <div class="three_text">
+                    <h3 style="height: 53px; overflow: hidden">
+                      <a href="/getNews?id=430"
+                        >⦅每天十分鐘的有效練習⦆　薩克斯風系列講座</a
+                      >
+                    </h3>
+
+                    <p>《薩克斯風很簡單》系列音樂講座</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row g-0">
+              <div class="col-lg-3">
+                <div class="news_bottom_img">
+                  <img src="https://picsum.photos/800/600?random=488" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-9 row custom-style g-0">
+                <div class="col-lg-2">
+                  <div class="three_area">
+                    <div class="area_button">
+                      <a href="/getNews?id=430">活動快訊</a>
+                    </div>
+                    <div class="three_time"><span>七月 27, 2023</span></div>
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <div class="three_text">
+                    <h3 style="height: 53px; overflow: hidden">
+                      <a href="/getNews?id=430"
+                        >⦅每天十分鐘的有效練習⦆　薩克斯風系列講座</a
+                      >
+                    </h3>
+
+                    <p>《薩克斯風很簡單》系列音樂講座</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <!-- place footer here -->
     </footer>
