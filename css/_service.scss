@@ -1,6 +1,15 @@
 .service {
   background-color: $mainColor;
   margin-top: 30px;
+  .serviceTitle {
+    margin: 20px;
+    .serviceTitleText {
+      display: block;
+      > h3 {
+        margin: 20px 0;
+      }
+    }
+  }
 }
 .service_parent {
   position: relative;

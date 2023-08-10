@@ -1,3 +1,7 @@
+.root {
+  --primary: #d01a48;
+}
+
 ul,
 ol {
   list-style-type: none;
@@ -12,6 +16,33 @@ a {
 
 a:hover {
   color: white;
+}
+
+.zoom {
+  overflow: hidden;
+}
+.zoom .inner {
+  position: relative;
+}
+.zoom .inner img {
+  transition: transform 0.42s cubic-bezier(0.15, 0.46, 0.57, 1);
+}
+.zoom .inner::before {
+  content: "";
+  transition: opacity 0.42s cubic-bezier(0.15, 0.46, 0.57, 1);
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.zoom:hover .inner img {
+  transform: scale(1.08, 1.08);
+}
+.zoom:hover .inner::before {
+  opacity: 1;
 }
 
 header {
@@ -199,6 +230,14 @@ header .go_down {
   background-size: cover;
   background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 136 47' style='enable-background:new 0 0 136 47;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%23FFFFFF;stroke-width:2;stroke-miterlimit:10;%7D%0A%3C/style%3E%3Cg%3E%3Cimage style='overflow:visible;opacity:0.25;' width='136' height='47' xlink:href='3EF62892.png' %3E%3C/image%3E%3Cg%3E%3Cpath class='st0' d='M13,13l42.4,13.1c5.3,1.6,13.9,1.6,19.1,0L117,13'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
+header .go_down::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  bottom: -20px;
+  left: -20px;
+  right: -20px;
+}
 header .bottom_area {
   position: absolute;
   color: #fff;
@@ -288,11 +327,24 @@ header .bottom_area a:hover {
 .nav_mobile .menu .line {
   width: 100%;
   height: 3px;
-  background-color: #ffffff;
+  background-color: #fff;
   margin-bottom: 5px;
   border-radius: 3px;
   position: relative;
   transition: transform 0.5s;
+}
+
+.nav_mobile:not(.collapsed) .menu .line0 {
+  display: none;
+  transition: 0.3s;
+}
+.nav_mobile:not(.collapsed) .menu .line1 {
+  transform: rotate(45deg) translateY(2px) translateX(0px);
+  transition: 0.5s;
+}
+.nav_mobile:not(.collapsed) .menu .line2 {
+  transform: rotate(-45deg) translateY(-6px) translateX(3px);
+  transition: 0.5s;
 }
 
 @media (max-width: 870px) {
@@ -309,10 +361,54 @@ header .bottom_area a:hover {
     top: 60px;
     background-color: white;
   }
+  header nav .nav_left > li {
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    text-align: left;
+    height: 58px;
+    line-height: 58px;
+    border-bottom: 1px solid #bbb;
+    border-radius: inherit;
+  }
+  header nav .nav_left > li a {
+    color: #000;
+    padding: 0 20px;
+  }
+  header nav .nav_left > li a::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 58px;
+    position: absolute;
+    right: 0;
+    border-left: 1px solid #bbbbbb;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.102' height='10.769' viewBox='0 0 7.102 10.769'%3E%3Cpath fill='%23646464' d='M.641 10.769L0 10l5.539-4.616L0 .769.641 0l6.461 5.384z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header nav .nav_left > li:hover {
+    background-color: #fff;
+  }
+  header nav .nav_left > li:hover .nav_menu {
+    display: none;
+  }
+  header nav.px_35 {
+    z-index: 7;
+  }
 }
 .service {
   background-color: #d01a48;
   margin-top: 30px;
+}
+.service .serviceTitle {
+  margin: 20px;
+}
+.service .serviceTitle .serviceTitleText {
+  display: block;
+}
+.service .serviceTitle .serviceTitleText > h3 {
+  margin: 20px 0;
 }
 
 .service_parent {
